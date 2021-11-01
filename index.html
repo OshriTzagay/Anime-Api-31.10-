@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naruto API</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Slackey&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .cards img {
+      opacity: 0.4;
+      filter: grayscale(100%);
+      transition: 1s;
+      width: 390px;
+      height: 350px;
+    }
+    .cards img:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+      filter: contrast(120%);
+      cursor: pointer;
+ 
+    }
+
+    body {
+      background-color: rgba(202, 133, 4, 0.699);
+      color: whitesmoke;
+      /* background-image: url(https://i.pinimg.com/564x/b0/12/18/b012186969ce3b544b15b7ff826b782e.jpg);
+      background-size: cover; */
+    }
+    h1 {
+      font-family: fantasy;
+      font-size: 100px;
+      background-color: rgba(245, 245, 245, 0.301);
+      width: 800px;
+      box-shadow: whitesmoke 3px 3px 3px 10px;
+    }
+    h1:hover {
+      background-color: white;
+      transition: 3s;
+    }
+    button {
+      font-size: xx-large;
+      color: white;
+      background-color: black;
+
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    #theSynop {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: black;
+      word-spacing: 3px;
+      font-size: 15px;
+    }
+    button:hover {
+      background-color: white;
+      color: black;
+      transition: 3s;
+      cursor: pointer;
+      font-size: xx-large;
+    }
+    #divPrint {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      transition: 4s;
+    }
+    #divPrint:hover {
+      background-color: rgba(245, 222, 179, 0.548);
+    }
+    .divHeader {
+      font-size: 30px;
+      color: black;
+      width: 260px;
+      height: 100px;
+    }
+    .cards {
+      margin: 30px;
+      border: black solid 3px;
+      width: 400px;
+      box-shadow: whitesmoke 3px 3px 3px 3px;
+
+    }
+    #GoToBtn{
+      border-radius: 50%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #searchInput {
+      width: 240px;
+      height: 30px;
+      background-color: black;
+      color: white;
+      font-size: x-large;
+    }
+    #searchInput:hover {
+      background-color: white;
+      color: black;
+      transition: 3s;
+    }
+    #theSearch {
+      font-size: xx-large;
+      font-family: "Slackey", cursive;
+    }
+    .goku {
+      opacity: 1;
+      filter: grayscale(0%);
+      filter: contrast(120%);
+      cursor: pointer;
+      height: 200px;
+      width: 300px;
+    }
+    #theHeader {
+      font-family: "Slackey", cursive;
+      width: 80%;
+      transition: 3s;
+    }
+    #theHeader:hover {
+      color: black;
+    }
+    #loader img{
+      height: 200px;
+      width: 200px;
+    }
+    #backgroundSection{
+      width: 98vw;
+      height: 60vh;
+      background-image: url(https://www.pngkey.com/png/full/508-5084218_naruto-rasengan-png-naruto.png);
+      background-position: center;
+      /* background-repeat: no-repeat; */
+      background-size:auto;
+      background-attachment: fixed;
+    }
+    #somDiv{
+      height: 40vh;
+    }
+  </style>
+  <body>
+    <center>
+      <section id="backgroundSection"></section>
+      <h1 id="theHeader">Tzagay's Anime Site</h1>
+      <div id="gifContainer">
+        <img class="goku" src="https://i.gifer.com/1Ub.gif" alt="" />
+        <img
+          class="goku"
+          src="https://media4.giphy.com/media/13YNFGgtjKSS4w/giphy.gif"
+          alt=""
+        />
+        <img
+          class="goku"
+          src="https://i.pinimg.com/originals/fc/11/d6/fc11d66badf688f62df85aba31fa361d.gif"
+          alt=""
+        />
+      </div>
+      <div id="somDiv">
+
+        <h3 id="theSearch">Anime Search:</h3>
+        <input type="text" id="searchInput" /><br /><br />
+        <!-- <button id="IDbtn">Search By ID</button> -->
+        <button type="button" id="btn">LETS GO!</button>
+        <div id="loader"></div>
+      </div>
+      <div id="divPrint"></div>
+    </center>
+    <script src="main.js"></script>
+  </body>
+</html>
